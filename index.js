@@ -7,7 +7,7 @@ const coon = require("./db/conn.js");
 
 // Middlewares
 app.use(express.json());
-app.use(cors({ credentials: true, origin: "http://localhost:8080" }));
+app.use(cors({ credentials: true}));
 app.use(express.static("public"));
 
 // Rotas
