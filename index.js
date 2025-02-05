@@ -30,6 +30,6 @@ app.use((err, req, res, next) => {
 
 // Inicialização do servidor
 const PORT = 5000;
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
