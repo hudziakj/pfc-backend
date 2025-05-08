@@ -4,9 +4,9 @@ const UserController = require("../controllers/UserController");
 
 const upload = require("../config/multer-config");
 
-router.post("/register", upload.single("avatar"), UserController.register);
-router.post("/login", UserController.login);
-router.get("/usuarios", UserController.getAllUsers);
-router.get("/:id", UserController.getUser);
+router.post("/registrar", upload.single("avatar"), UserController.registrar);
+router.post("/autenticar", UserController.autenticar);
+router.get("/listar", UserController.obterTodosUsuarios);
+router.get("/:id", UserController.obterUsuario);
 
 module.exports = router;
